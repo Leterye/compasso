@@ -1,0 +1,21 @@
+{
+  "dart.flutterSdkPath": "C:\\dev\\flutter",
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.dart_tool": true,
+    "**/.idea": true,
+    "**/.metadata": true,
+    "**/.vscode": true,
+    "**/.runtime": true,
+    "**/*.iml": true,
+    "**/build": true,
+    "**/node_modules": true,
+    "**/pubspec.lock": true,
+    "**/package-lock.json": true,
+    "**/analysis_options.yaml": true,
+    "api/data": true,
+    "docs": true
+  }
+}

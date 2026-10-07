@@ -1,0 +1,12 @@
+import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
+import { existsSync } from 'node:fs';
+const require = createRequire(new URL('../api/package.json', import.meta.url));
+const express = require('express');
+const app = express();
+const root = fileURLToPath(new URL('../build/web/', import.meta.url));
+if (!existsSync(`${root}/index.html`)) throw new Error('Execute flutter build web antes de iniciar.');
+app.disable('x-powered-by');
+app.use(express.static(root, { etag: false, maxAge: 0, setHeaders: res => res.set('Cache-Control', 'no-store') }));
+app.use((_req, res) => res.sendFile(`${root}/index.html`));
+app.listen(5173, '127.0.0.1', () => console.log('Compasso: http://127.0.0.1:5173'));

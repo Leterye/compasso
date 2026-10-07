@@ -1,0 +1,28 @@
+@base = http://127.0.0.1:3001
+
+### Saúde da API
+GET {{base}}/health
+
+### Listar disciplinas
+GET {{base}}/disciplinas
+
+### Criar disciplina
+POST {{base}}/disciplinas
+Content-Type: application/json
+
+{"nome":"Frameworks Web","professor":"Prof. Wagner","cor":"roxo"}
+
+### Listar atividades
+GET {{base}}/atividades
+
+### Criar atividade: substitua disciplinaId pelo ID devolvido
+POST {{base}}/atividades
+Content-Type: application/json
+
+{"titulo":"Preparar apresentação","disciplinaId":1,"tipo":"tarefa","prazo":"2026-10-07","descricao":"Demonstrar cadastro e listagem."}
+
+### Concluir: substitua o ID pelo devolvido no cadastro
+PATCH {{base}}/atividades/1
+Content-Type: application/json
+
+{"concluida":true}
