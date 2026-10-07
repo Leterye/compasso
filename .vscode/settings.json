@@ -1,5 +1,8 @@
 {
   "dart.flutterSdkPath": "C:\\dev\\flutter",
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\dev\\flutter\\bin;${env:PATH}"
+  },
   "explorer.compactFolders": false,
   "files.exclude": {
     "**/.git": true,

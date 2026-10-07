@@ -45,9 +45,24 @@ obrigatório com o professor, pois a Aula 06 também exemplifica MySQL/PostgreSQ
 
 ## Executar
 
+**Para abrir a prévia agora:** no VS Code, pressione **Ctrl+Shift+B** e depois
+abra **http://127.0.0.1:5173/** no Chrome. A tarefa inicia os dois servidores ou
+reutiliza os que já estiverem ativos, sem tentar recompilar o Flutter.
+
+Também pode executar no terminal:
+```powershell
+cd C:\dev\organizador_estudos
+node scripts/iniciar.mjs
+```
+
+Não abra `web/index.html` diretamente ou pelo Live Server. A prévia precisa do
+servidor acima. Abaixo está o fluxo de desenvolvimento, que ainda depende de
+resolver o bloqueio do compilador descrito no final deste documento.
+
 Abra `C:\dev\organizador_estudos` no VS Code. É um atalho para a pasta original,
 sem duplicação, que evita problemas do Flutter com acentos no caminho.
 Requisitos instalados: Flutter 3.47.6, Dart 3.13.5 e Node.js 24.
+Novos terminais integrados do VS Code também recebem o Flutter no PATH.
 
 Terminal 1:
 ```powershell
