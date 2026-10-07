@@ -87,7 +87,9 @@ segundo terminal. A prévia atual contém exemplos fictícios.
 `flutter analyze` passou sem erros; `npm test` em `api/` passou nos 3 testes.
 Cadastro, validação, conclusão, persistência após recarregar e filtro de concluídas
 foram testados no navegador; a lista também foi conferida em tela estreita.
-Git é local; ainda não existe repositório no GitHub.
+Repositório privado: https://github.com/Leterye/compasso.
+Para enviar alterações futuras: `git add .`, `git commit -m "Descreva a mudança"`
+e `git push`. Pessoas convidadas podem acessar o projeto.
 
 **Pendência do ambiente:** o Windows bloqueou o `impellerc.exe` do Flutter na etapa
 de shaders. Por isso, `flutter build web`, `flutter run` e os testes Flutter ainda
